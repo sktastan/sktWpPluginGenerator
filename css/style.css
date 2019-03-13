@@ -1,0 +1,251 @@
+/* 
+    --------------------------------------------------------
+                            Main css 
+    --------------------------------------------------------     
+*/
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+body {
+    background-color: #262626;
+}
+
+@font-face {
+    font-family: FontAwesome;
+    src: url("../font/fa-solid-900.woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: FontAwesome;
+    src: url("../font/fa-regular-400.woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: FontAwesome;
+    src: url("../font/fa-brands-400.woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+    background-color: #222;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: #ed2474;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ed2474;
+    border: 2px solid #222;
+}
+
+.projectSection {
+    background-color: #171717;
+}
+
+#tabs {
+    background-color: #171717;
+    border: none;
+}
+
+.metaBoxInfoContainer,
+.pluginInfoContainer,
+.customPostInfoContainer {
+    padding: 30px;
+    background-color: #222;
+}
+
+.componentSection {
+    background-color: #171717;
+}
+
+.elementContainer ul li {
+    padding: 10px 20px;
+    margin: 3px;
+    /*border: 1px solid #444;*/
+    background-color: #222;
+    color: #ed2474;
+    text-shadow: 2px 2px 40px #ed2474;
+    font-weight: bold;
+    text-align: left
+}
+
+.elementContainer ul li:hover {
+    background-color: #333;
+    color: #fff;
+    text-shadow: 2px 2px 40px #eee;
+}
+
+.textIcon:before,
+.textareaIcon:before,
+.colorIcon:before,
+.rangeIcon:before,
+.selectIcon:before,
+.radioIcon:before,
+.checkboxIcon:before,
+.mediaIcon:before,
+.numberIcon:before,
+.dateIcon:before,
+.datetimeLocalIcon:before,
+.emailIcon:before,
+.monthIcon:before,
+.telIcon:before,
+.timeIcon:before,
+.weekIcon:before {
+    font-family: FontAwesome;
+    font-size: 150%;
+    font-weight: bold;
+    vertical-align: middle;
+    margin-right: 10px;
+    /*color:#00a8f3;*/
+}
+
+.textIcon:before {
+    content: "\f246";
+}
+
+.textareaIcon:before {
+    content: "\f034";
+}
+
+.colorIcon:before {
+    content: "\f38c";
+}
+
+.rangeIcon:before {
+    content: "\f1de"
+}
+
+.selectIcon:before {
+    display: inline-block;
+    content: "\f03b";
+    transform: rotate(-90deg);
+}
+
+.radioIcon:before {
+    content: "\f192"
+}
+
+.checkboxIcon:before {
+    content: "\f00c"
+}
+
+.mediaIcon:before {
+    content: "\f302"
+}
+
+.numberIcon:before {
+    content: "\f162"
+}
+
+.dateIcon:before {
+    content: "\f0ce"
+}
+
+.datetimeLocalIcon:before{
+    content: "\f133"
+}
+
+.weekIcon:before{
+    content: "\f073"
+}
+
+.monthIcon:before{
+    content: "\f274"
+}
+
+.emailIcon:before{
+    content: "\f0e0"
+}
+
+.telIcon:before{
+    content: "\f3cd"
+}
+
+.timeIcon:before{
+    content: "\f017"
+}
+
+.ui-tabs {
+    position: relative;
+    padding: 0;
+}
+
+.ui-widget-header {
+    border: none;
+    background: #171717;
+    color: #ed2474;
+    font-weight: bold;
+}
+
+.ui-tabs .ui-tabs-panel {
+    padding: 2px;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    border: none;
+    background: #222;
+}
+
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited,
+a.ui-button,
+a:link.ui-button,
+a:visited.ui-button,
+.ui-button {
+    color: #ed2474;
+}
+
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+    color: #fff;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+    /* border: 1px solid #ed2474; */
+    background: #222;
+    font-weight: normal;
+    color: #fff;
+    padding: 30px
+}
+
+.textareaStyle {
+    padding: 10px;
+    background: none;
+    border: 1px solid #ed2474;
+    color: #fff;
+    vertical-align: middle;
+    border-radius: 5px
+}

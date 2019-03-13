@@ -1,0 +1,176 @@
+$bgColor: #fff
+$borderColor: #f1f1f1
+$listColor: #ed2474
+$hoverColor: orange
+$metaBoxLabelColor: $listColor
+$padding: 10px 20px
+
+@font-face 
+  font-family: FontAwesome
+  src: url("../font/fa-solid-900.woff2")
+  font-weight: normal
+  font-style: normal
+
+@font-face 
+  font-family: FontAwesome
+  src: url("../font/fa-regular-400.woff2" )
+  font-weight: normal
+  font-style: normal
+ 
+@font-face 
+  font-family: FontAwesome
+  src: url("../font/fa-brands-400.woff2" )
+  font-weight: normal
+  font-style: normal
+
+body
+    background-color: $bgColor
+    font-size: 90%
+ 
+.elementList li
+    list-style: none
+
+.navContainer ul li
+    position: relative
+    border: 1px solid rgba(255,255,255,0)
+    list-style: none
+    padding: 10px
+    background-color: #222
+    // margin: 2px 0
+
+.navContainer ul li:hover
+    border: 1px solid $listColor
+
+.navContainer ul li:hover .deleteElementButton
+	display: block   
+
+.projectSection label
+    display: inline-block
+    // width: 20%
+    width: 200px
+    padding: $padding
+    text-align: left
+    color: $listColor
+
+.projectSection input[type="text"]
+    // width: 50%
+    width: calc(100% - 380px); 
+    padding: 10px 20px
+    background: none
+    border: 1px solid #ed2474
+    color:#fff
+    border-radius: 50px
+
+.projectSection p
+    width: 30%
+    display: inline
+    margin-left: 30px 
+    color: $listColor
+
+.deleteElementButton
+    display: none
+    position: absolute
+    top: 18px
+    right: 10px
+    // margin-left: 3px
+    padding: 5px
+    border: none 
+    background: none
+    color: #ed2474
+
+.deleteElementButton:hover
+    background-color: #ed2474
+    color: #fff
+
+.elementList li        
+        padding: $padding 
+        text-decoration: none
+        color: $listColor 
+        li:hover
+            text-decoration: underline
+            color: $hoverColor 
+            border: 1px solid $borderColor
+
+.metaBoxLabelColor
+    padding: $padding
+    color: $metaBoxLabelColor 
+
+// .buttonContainer
+//     width: 100%
+//     background-color: #222
+//     padding: 10px
+
+// .button
+//     position: relative
+//     margin: 0 auto
+//     display: block
+//     padding: 8px 50px
+//     background: none
+//     border: 1px solid #ed2474
+//     border-radius: 20px
+//     color:  #ed2474
+//     text-shadow: 2px 2px 40px #ed2474
+
+// .button:hover
+//     background-color: #ed2474
+//     color: #fff
+//     text-shadow: 2px 2px 40px #fff;
+
+.buttonContainer
+    width: 100%
+    background-color: #222
+    // padding: 1px
+
+.button
+    padding: 10px 20px
+    // margin-bottom: 2px
+    color: #ed2474
+    text-shadow: 2px 2px 40px #ed2474
+    font-weight: bold
+    text-align: center
+    background-color: #222
+    border: none
+    // display: block
+    // width: 100%
+    // border-radius: 50px
+
+.button:hover
+    background-color: #333
+    color: #fff
+    text-shadow: 2px 2px 40px #eee
+
+.saveFile
+    font-family: FontAwesome;    
+    font-weight: bold; 
+    vertical-align: middle;
+
+.saveFile:before
+    content: "\f0c7" 
+    font-size: 150%
+    margin-right: 10px
+
+.saveJson
+    font-family: FontAwesome;    
+    font-weight: bold; 
+    vertical-align: middle;
+
+.saveJson:before
+    content: "\f0a0" 
+    font-size: 150%
+    margin-right: 10px
+
+.loadJson
+    font-family: FontAwesome;    
+    font-weight: bold; 
+    vertical-align: middle;
+
+.loadJson:before
+    content: "\f019" 
+    font-size: 150%
+    margin-right: 10px
+
+
+
+// #IDcodeContainer
+//     width: 100%;
+//     height: 100%

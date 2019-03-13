@@ -1,0 +1,2 @@
+# sktWpPluginGenerator
+Wordpress plugin generator

@@ -177,7 +177,7 @@ class `+ name_singular +`_Meta_Box {
 		$tab_count = 5;
 		foreach ( $this->fields as $field ) {
 			$label = '<label for="' . $field['id'] . '">' . $field['label'] . '</label>';
-			$db_value = get_post_meta( $post->ID, 'advanced_options_' . $field['id'], true );
+			$db_value = get_post_meta( $post->ID, $field['id'], true );
 			switch ( $field['type'] ) {
 				// case 'tab':
 				// 	$input = sprintf(
@@ -305,9 +305,9 @@ class `+ name_singular +`_Meta_Box {
 						$_POST[ $field['id'] ] = sanitize_text_field( $_POST[ $field['id'] ] );
 						break;
 				}
-				update_post_meta( $post_id, 'advanced_options_' . $field['id'], $_POST[ $field['id'] ] );
+				update_post_meta( $post_id, $field['id'], $_POST[ $field['id'] ] );
 			} else if ( $field['type'] === 'checkbox' ) {
-				update_post_meta( $post_id, 'advanced_options_' . $field['id'], '0' );
+				update_post_meta( $post_id, $field['id'], '0' );
 			}
 		}
 	}

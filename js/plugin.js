@@ -164,7 +164,7 @@ class `+ name_singular +`_Meta_Box {
 						_custom_media = false;
 					});
 				}
-				$("#metaBoxTabs").tabs();
+				//$("#metaBoxTabs").tabs();
 			});			
 		</script><?php
 	}
